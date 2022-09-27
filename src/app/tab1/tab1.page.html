@@ -9,7 +9,7 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="fade">
     <ion-toolbar>
-      <ion-button slot="end" color="dark">C</ion-button>
+      <ion-button type="reset" slot="end" color="dark" (click)="limpar()">C</ion-button>
       <ion-title>Calculadora</ion-title>
     </ion-toolbar>
   </ion-header>
@@ -35,19 +35,19 @@
         </ion-col>
 
         <ion-col size="3">
-        <ion-button color="dark" expand="block">
+        <ion-button (click)="mostrarSubtracao()" color="dark" expand="block">
           -
         </ion-button>  
         </ion-col>
 
         <ion-col size="3">
-          <ion-button color="dark" expand="block">
+          <ion-button (click)="mostrarMultiplicacao()" color="dark" expand="block">
             x
           </ion-button>
         </ion-col>
 
         <ion-col size="3">
-          <ion-button color="dark" expand="block">
+          <ion-button (click)="mostrarDivisao()" color="dark" expand="block">
             /
           </ion-button>
         </ion-col>
@@ -57,13 +57,13 @@
       <ion-row>
 
         <ion-col size="6">
-          <ion-button color="dark" expand="block">
+          <ion-button (click)="mostrarMaior()" color="dark" expand="block">
             Maior
           </ion-button>
         </ion-col>
 
         <ion-col size="6">
-        <ion-button color="dark" expand="block">
+        <ion-button (click)="mostrarMenor()" color="dark" expand="block">
           Menor
         </ion-button>  
         </ion-col>
@@ -72,10 +72,12 @@
 
 
       <ion-item>
-        <ion-label>Resultado:</ion-label>
+        <ion-label> <b>Resultado:</b> </ion-label>
+        <ion-input [(ngModel)]="resultado"></ion-input>
       </ion-item>
 
       <ion-item>
-        <ion-label>Conta:</ion-label>
+        <ion-label> <b>Conta:</b> </ion-label>
+        <ion-input [(ngModel)]="conta"></ion-input>
       </ion-item>
 </ion-content>
