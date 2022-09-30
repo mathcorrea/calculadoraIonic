@@ -1,17 +1,159 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="dark">
     <ion-title>
-      Tab 2
+      Calculadora 2
     </ion-title>
   </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+<ion-content [fullscreen]="true" color="dark">
+  
+
+    <ion-card>
+    <ion-item>
+    <ion-label position="floating">Operação</ion-label>
+    <ion-input></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Resultado:</ion-label>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-row>
+        <ion-button fill="clear" color="dark" expand="block">
+          MC
+        </ion-button>
+
+        <ion-button fill="clear" color="dark" expand="block">
+          MR
+        </ion-button>
+        
+        <ion-button fill="clear" color="dark" expand="block">
+          M+
+        </ion-button>
+
+        <ion-button fill="clear" color="dark" expand="block">
+          M-
+        </ion-button>
+
+        <ion-button fill="clear" color="dark" expand="block">
+          MS
+        </ion-button>
+
+        <ion-button fill="clear" color="dark" expand="block">
+          M▾
+        </ion-button>
+
+    </ion-row>
+
+    <ion-row>
+
+      <ion-col>
+        <ion-button fill="solid" color="dark" expand="block">
+          %
+        </ion-button>
+
+        <ion-button fill="solid" color="dark" expand="block">
+          1/x
+        </ion-button>
+
+        <ion-button fill="outline" color="dark" expand="block">
+          7
+        </ion-button>
+
+        <ion-button fill="outline" color="dark" expand="block">
+          4
+        </ion-button>
+        
+        <ion-button fill="outline" color="dark" expand="block">
+          1
+        </ion-button>
+
+        <ion-button fill="outline" color="dark" expand="block">
+          +/-
+        </ion-button>
+      </ion-col>
+
+      <ion-col>
+        <ion-button fill="solid" color="dark" expand="block">
+          CE
+        </ion-button>
+
+        <ion-button fill="solid" color="dark" expand="block">
+          x²
+        </ion-button>
+
+        <ion-button fill="outline" color="dark" expand="block">
+          8
+        </ion-button>
+
+        <ion-button fill="outline" color="dark" expand="block">
+          5
+        </ion-button>
+        
+        <ion-button fill="outline" color="dark" expand="block">
+          2
+        </ion-button>
+
+        <ion-button fill="outline" color="dark" expand="block">
+          0
+        </ion-button>
+      </ion-col>
+
+      <ion-col>
+        <ion-button fill="solid" color="dark" expand="block">
+          C
+        </ion-button>
+
+        <ion-button fill="solid" color="dark" expand="block">
+          ²√x
+        </ion-button>
+
+        <ion-button fill="outline" color="dark" expand="block">
+          9
+        </ion-button>
+
+        <ion-button fill="outline" color="dark" expand="block">
+          6
+        </ion-button>
+        
+        <ion-button fill="outline" color="dark" expand="block">
+          3
+        </ion-button>
+
+        <ion-button fill="outline" color="dark" expand="block">
+          ,
+        </ion-button>
+      </ion-col>
+
+      <ion-col>
+        <ion-button fill="solid" color="dark" expand="block">
+          <ion-icon name="backspace-outline"></ion-icon>
+        </ion-button>
+
+        <ion-button fill="solid" color="dark" expand="block">
+          ÷
+        </ion-button>
+
+        <ion-button fill="solid" color="dark" expand="block">
+          x
+        </ion-button>
+
+        <ion-button fill="solid" color="dark" expand="block">
+          -
+        </ion-button>
+        
+        <ion-button fill="solid" color="dark" expand="block">
+          +
+        </ion-button>
+
+        <ion-button fill="solid" color="primary" expand="block">
+          =
+        </ion-button>
+      </ion-col>
+
+    </ion-row>
+  </ion-card>
+
 </ion-content>
