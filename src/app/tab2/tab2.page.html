@@ -22,19 +22,19 @@
 
   <ion-card>
     <ion-row>
-        <ion-button  fill="clear" color="dark" expand="block">
+        <ion-button (click)="limparMemoria()"  fill="clear" color="dark" expand="block">
           MC
         </ion-button>
 
-        <ion-button fill="clear" color="dark" expand="block">
+        <ion-button (click)="mostrarMemoria()" fill="clear" color="dark" expand="block">
           MR
         </ion-button>
         
-        <ion-button fill="clear" color="dark" expand="block">
+        <ion-button (click)="somaNaMemoria()" fill="clear" color="dark" expand="block">
           M+
         </ion-button>
 
-        <ion-button fill="clear" color="dark" expand="block">
+        <ion-button (clicl)="subtraiNaMemoria" fill="clear" color="dark" expand="block">
           M-
         </ion-button>
 
@@ -42,7 +42,7 @@
           MS
         </ion-button>
 
-        <ion-button fill="clear" color="dark" expand="block">
+        <ion-button (click)="openModal()" fill="clear" color="dark" expand="block">
           M▾
         </ion-button>
 
@@ -103,7 +103,7 @@
       </ion-col>
 
       <ion-col>
-        <ion-button (click)="limparMemoria()" fill="solid" color="dark" expand="block">
+        <ion-button (click)="limparTudo()" fill="solid" color="dark" expand="block">
           C
         </ion-button>
 
